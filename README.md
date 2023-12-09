@@ -42,6 +42,33 @@ admin. The web application will have the following features:
   teachers.
 
 
-# Installation Guide
+# Installation Guide for the app
+
+Open the project in android studio and run the program in an emulator or a mobile device. Upgrade gradle files if necessary.
+
+# Installation Guide for the backend
+
+**Backend Packages Required**
+
+Install the latest version of python. The required packages listed below are included the requirement.txt file in the MyUsers folder (which is included in this repository). 
+
+Django
+django_rest_knox
+djangorestframework
+knox
+requests
+Pillow
+
+To install a package, type -> *pip install package_name* in the command prompt.
+
+For example, to install djangorestframework:
+  
+  *pip install djangorestframework*
+
+To install all the packages at once:
+
+There is requirement.txt file in the MyUsers folder which you can use to install all the necessary packages for the backend. Run the command below in command prompt to install the packages.
+
+*pip install -r /path/to/requirements.txt*
 
 
