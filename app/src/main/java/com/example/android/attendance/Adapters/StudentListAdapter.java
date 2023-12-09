@@ -54,7 +54,7 @@ public class StudentListAdapter extends BaseAdapter {
         studentId.setText(Integer.toString(dataList.get(position).getStudent_id()));
         studentName.setText(dataList.get(position).getStudent_name());
         String studentImageURL = dataList.get(position).getProfile_image();
-        Picasso.get().load("http://192.168.1.71:8000" + studentImageURL).into(studentImage);
+        Picasso.get().load("http://192.168.1.01:8000" + studentImageURL).into(studentImage);
 
         return convertView;
     }
