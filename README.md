@@ -4,9 +4,9 @@ This attendance management android app allows the students themselves to mark th
 and the teacher has to start a session on his/her phone) and the app also keeps track of their overall attendance record. The app was created using JAVA in Android Studio IDE and the backend for the app was created with Django. 
 The project also contains an admin panel in the form of a Web App using which they can register/de-register student and teachers, view all the attendance record and also assign and manage the classes and schedule of the students and teachers.
 
-![image](https://github.com/Azan9/Attendance-Management-Android-App/assets/43653409/36934ff8-4875-4442-aa65-7128d1ca716b) &nbsp; ![image](https://github.com/Azan9/Attendance-Management-Android-App/assets/43653409/af02134b-7dc9-4adb-962f-e7e17d3c54a7) &nbsp; 
-![image](https://github.com/Azan9/Attendance-Management-Android-App/assets/43653409/1fc91df4-2b04-4bc4-bc09-3c698d11a5a4) &nbsp; ![image](https://github.com/Azan9/Attendance-Management-Android-App/assets/43653409/6db11af9-1432-48da-9d3b-c2957ca287d9) &nbsp; 
-![image](https://github.com/Azan9/Attendance-Management-Android-App/assets/43653409/17c61cb0-b0bc-4f7d-8ed9-4ed58ae33c70) &nbsp; ![image](https://github.com/Azan9/Attendance-Management-Android-App/assets/43653409/cf6626d0-7a62-44c5-b085-e82736029887)
+![image](https://github.com/Azan9/Attendance-Management-Android-App/assets/43653409/36934ff8-4875-4442-aa65-7128d1ca716b) &nbsp; &nbsp; ![image](https://github.com/Azan9/Attendance-Management-Android-App/assets/43653409/af02134b-7dc9-4adb-962f-e7e17d3c54a7) &nbsp; &nbsp; ![image](https://github.com/Azan9/Attendance-Management-Android-App/assets/43653409/1fc91df4-2b04-4bc4-bc09-3c698d11a5a4) 
+
+![image](https://github.com/Azan9/Attendance-Management-Android-App/assets/43653409/6db11af9-1432-48da-9d3b-c2957ca287d9) &nbsp; &nbsp; ![image](https://github.com/Azan9/Attendance-Management-Android-App/assets/43653409/17c61cb0-b0bc-4f7d-8ed9-4ed58ae33c70) &nbsp; &nbsp; ![image](https://github.com/Azan9/Attendance-Management-Android-App/assets/43653409/cf6626d0-7a62-44c5-b085-e82736029887)
 
 
 # Mobile App Features
