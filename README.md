@@ -52,12 +52,12 @@ Open the project in android studio and run the program in an emulator or a mobil
 
 Install the latest version of python. The required packages listed below are included the requirement.txt file in the MyUsers folder (which is included in this repository). 
 
-Django
-django_rest_knox
-djangorestframework
-knox
-requests
-Pillow
+* Django
+* django_rest_knox
+* djangorestframework
+* knox
+* requests
+* Pillow
 
 To install a package, type -> ```pip install package_name``` in the command prompt.
 
