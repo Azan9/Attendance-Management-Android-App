@@ -4,7 +4,8 @@ This attendance management android app allows the students themselves to mark th
 and the teacher has to start a session on his/her phone) and the app also keeps track of their overall attendance record. The app was created using JAVA in Android Studio IDE and the backend for the app was created with Django. 
 The project also contains an admin panel in the form of a Web App using which they can register/de-register student and teachers, view all the attendance record and also assign and manage the classes and schedule of the students and teachers.
 
-![image](https://github.com/Azan9/Attendance-Management-Android-App/assets/43653409/28ee7872-459a-479f-8726-1a517517adf0)
+![image](https://github.com/Azan9/Attendance-Management-Android-App/assets/43653409/79f8179b-694c-42ed-8ccc-724f4de85968)
+
 
 
 
