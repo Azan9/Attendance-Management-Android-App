@@ -59,16 +59,16 @@ knox
 requests
 Pillow
 
-To install a package, type -> *pip install package_name* in the command prompt.
+To install a package, type -> ```pip install package_name``` in the command prompt.
 
 For example, to install djangorestframework:
   
-  *pip install djangorestframework*
+  ```pip install djangorestframework```
 
 To install all the packages at once:
 
 There is requirement.txt file in the MyUsers folder which you can use to install all the necessary packages for the backend. Run the command below in command prompt to install the packages.
 
-*pip install -r /path/to/requirements.txt*
+```pip install -r /path/to/requirements.txt```
 
 
