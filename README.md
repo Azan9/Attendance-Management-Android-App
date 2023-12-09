@@ -49,6 +49,9 @@ Note: Change the IP address to your devices private IP address in the ApiClient.
 
 # Installation Guide for the backend
 
+_Note: The backend is functional but incomplete. Before inserting new data Refer to the ER diagram [here](https://github.com/Azan9/Attendance-Management-Android-App/blob/main/ER%20Diagram/ERD.png)._
+
+
 **Backend Packages Required**
 
 Install the latest version of python. The required packages listed below are included the requirement.txt file in the MyUsers folder (which is included in this repository). 
