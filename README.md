@@ -48,11 +48,12 @@ Open the project in android studio and run the program in an emulator or a mobil
 
 # Installation Guide for the backend
 
-**Backend Packages Required**
+Backend Packages Required**
 
 Install the latest version of python. The required packages listed below are included the requirement.txt file in the MyUsers folder (which is included in this repository). 
 
 * Django
+* 
 * django_rest_knox
 * djangorestframework
 * knox
