@@ -276,7 +276,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                         String imageURL = dataList.get(0).getProfile_image();
                         username.setText(dataList.get(0).getFull_name());
                         userEmail.setText(dataList.get(0).getEmail());
-                        Picasso.get().load("http://192.168.1.71:8000" + imageURL).into(profileImage);
+                        Picasso.get().load("http://192.168.1.01:8000" + imageURL).into(profileImage);
                     }
                 } else {
 
