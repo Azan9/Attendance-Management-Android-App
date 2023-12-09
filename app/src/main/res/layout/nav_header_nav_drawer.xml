@@ -23,7 +23,7 @@
             android:layout_height="match_parent"
             android:contentDescription="@string/nav_header_desc"
             android:scaleType="fitXY"
-            app:srcCompat="@drawable/azan" />
+            app:srcCompat="@drawable/user" />
 
     </androidx.cardview.widget.CardView>
 
