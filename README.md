@@ -85,8 +85,12 @@ _127.0.0.1:8000_ to use the web app or _127.0.0.1:8000/admin_ if you want to use
 # Screenshots of the web app
 
 ![image](https://github.com/Azan9/Attendance-Management-Android-App/assets/43653409/1204af0c-8668-46aa-b887-f5cea71ddd24)
-  &nbsp; ![image](https://github.com/Azan9/Attendance-Management-Android-App/assets/43653409/f8f3ee2b-b97e-43cd-bbec-c61bf754e6c9) &nbsp; ![image](https://github.com/Azan9/Attendance-Management-Android-App/assets/43653409/1818491e-dfe6-431c-b544-3ba7fcbfaf42) 
-  &nbsp; ![image](https://github.com/Azan9/Attendance-Management-Android-App/assets/43653409/ff9acc73-9368-4a95-91ff-9eea16a422fb)
+
+![image](https://github.com/Azan9/Attendance-Management-Android-App/assets/43653409/f8f3ee2b-b97e-43cd-bbec-c61bf754e6c9) 
+
+![image](https://github.com/Azan9/Attendance-Management-Android-App/assets/43653409/1818491e-dfe6-431c-b544-3ba7fcbfaf42) 
+
+![image](https://github.com/Azan9/Attendance-Management-Android-App/assets/43653409/ff9acc73-9368-4a95-91ff-9eea16a422fb)
 
 
 
