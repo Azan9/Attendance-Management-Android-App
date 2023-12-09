@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:paddingBottom="100dp"
+        android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAlignment="center">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/class_card_view"
+                    android:layout_width="150dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="20dp"
+                    android:elevation="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/classroom"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:src="@drawable/classroom" />
+
+                        <TextView
+                            android:id="@+id/text_home"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/classroom"
+                            android:fontFamily="@font/balsamiq_sans"
+                            android:text="Subjects"
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/time_card_view"
+                    android:layout_width="150dp"
+                    android:layout_height="170dp"
+                    android:layout_toRightOf="@id/class_card_view"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="20dp"
+                    android:elevation="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal">
+
+                        <ImageView
+                            android:id="@+id/timetable"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="35dp"
+                            android:src="@drawable/timetable" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/timetable"
+                            android:fontFamily="@font/balsamiq_sans"
+                            android:text="@string/timetable"
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/attend_card_view"
+                    android:layout_width="150dp"
+                    android:layout_height="170dp"
+                    android:layout_below="@id/class_card_view"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="20dp"
+                    android:elevation="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/attendance"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:src="@drawable/attendantlist" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/attendance"
+                            android:fontFamily="@font/balsamiq_sans"
+                            android:text="@string/attendance_record"
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cog_card_view"
+                    android:layout_width="150dp"
+                    android:layout_height="170dp"
+                    android:layout_toRightOf="@id/attend_card_view"
+                    android:layout_below="@id/time_card_view"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="20dp"
+                    android:elevation="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/cogwheel"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:src="@drawable/cogwheel" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/cogwheel"
+                            android:textAlignment="center"
+                            android:fontFamily="@font/balsamiq_sans"
+                            android:text="@string/other"
+                            android:textColor="@color/black" />
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </RelativeLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

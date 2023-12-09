@@ -1,0 +1,147 @@
+.form-box {
+    margin: auto;
+    padding-top: 50px;
+    width: 300px;
+}
+
+.heading-one-index {
+    margin-top: 150px;
+}
+
+.form-group {
+    padding-bottom: 30px;
+}
+
+.form-control {
+    margin-bottom: 20px;
+    margin-top: 5px;
+    font-size: 1.1rem;
+}
+
+.lbl-text {
+    font-size: 1.1rem;
+}
+
+.login-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 45px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.05rem;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+.navbar {
+    padding: 10px 5%;
+    border: 0 0 2px 0 solid #000000;
+    box-shadow:0 0 5px 0;
+}
+
+.offcanvas {
+    width:15%;
+    background:url(../images/greybg.PNG);
+}
+
+.offcanvas-body {
+    color: black;
+    background: url(../images/greybg.PNG);
+}
+
+a {
+    color:black;
+}
+
+.nav-link {
+    padding:10px;
+}
+
+a:hover {
+    color:black;
+}
+
+.nav-item a {
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size:17px;
+}
+
+.nav-item a:hover {
+    color: black;
+    background-color: white;
+    margin:2px;
+    border-radius:5px;
+}
+
+.navbar-nav > .active > a {
+    background-color: blue;
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.nav-header-font {
+    font-family:'Montserrat';
+    font-weight:bold;
+    font-size:2rem;
+}
+
+.offcanvas-header-font {
+    color: black;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 1.3rem;
+    color:white;
+}
+
+hr {
+    color: white;
+}
+
+.row-margin {
+    margin-top:100px;
+}
+
+.list-unstyled li {
+    margin-bottom:20px;
+    
+}
+
+.list-unstyled li a {
+    width:300px;
+    height:fit-content;
+}
+
+
+.table-align {
+    padding-top: 30px;
+}
+
+.table-margin {
+    margin-bottom:50px;
+}
+
+.button-Ins-Upd {
+    margin-top:10px;
+    margin-bottom:20px;
+}
+
+.form-control {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.heading-one {
+    margin-top:50px;
+}
+
+.icon-margin {
+    margin-right: 10px;
+}
+
+.fa {
+    width:20px;
+}

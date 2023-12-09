@@ -1,0 +1,150 @@
+/* Student Subjects  */
+Select users_student.id, users_student.user_id_id, users_student.full_name, users_course.course_name, users_subject.subject_name FROM users_student 
+JOIN users_student_course ON users_student.id = users_student_course.student_Id_id
+JOIN users_course ON users_student_course.course_Id_id = users_course.id
+JOIN users_course_subject ON users_course.id = users_course_subject.course_Id_id
+JOIN users_subject ON users_course_subject.subject_Id_id = users_subject.id;
+
+
+/* Student Schdeule  */
+Select users_student.id, users_student.user_id_id AS "user_id", users_student.full_name, users_subject.subject_name, users_classes.class_name, users_class_schedule.day, users_class_schedule.start_time, users_class_schedule.end_time FROM users_student
+JOIN users_student_schedule ON users_student.id = users_student_schedule.student_Id_id
+JOIN users_class_schedule ON users_student_schedule.class_schedule_Id_id = users_class_schedule.id
+JOIN users_classes ON users_class_schedule.class_Id_id = users_classes.id
+JOIN users_subject ON users_class_schedule.subject_Id_id = users_subject.id;
+
+
+
+/* Teacher Subjects  */
+Select DISTINCT users_subject.subject_name, users_subject.id AS "subject_id", users_teacher.id, users_teacher.full_name, users_teacher.user_id_id  FROM users_teacher 
+JOIN users_teacher_course ON users_teacher.id = users_teacher_course.teacher_Id_id
+JOIN users_course ON users_teacher_course.course_Id_id = users_course.id
+JOIN users_course_subject ON users_course.id = users_course_subject.course_Id_id
+JOIN users_subject ON users_course_subject.subject_Id_id = users_subject.id;
+
+
+/* Teacher Schedule  */
+Select users_teacher.id, users_teacher.user_id_id AS "user_id", users_teacher.full_name, users_subject.subject_name, users_classes.class_name, users_class_schedule.day, users_class_schedule.start_time, users_class_schedule.end_time FROM users_teacher
+JOIN users_teacher_schedule ON users_teacher.id = users_teacher_schedule.teacher_Id_id
+JOIN users_class_schedule ON users_teacher_schedule.class_schedule_Id_id = users_class_schedule.id
+JOIN users_classes ON users_class_schedule.class_Id_id = users_classes.id
+JOIN users_subject ON users_class_schedule.subject_Id_id = users_subject.id;
+
+
+/* Teacher Students  */
+Select users_teacher.id, users_teacher.user_id_id AS "user_id" , users_subject.subject_name, users_classes.class_name, users_class_schedule.day, users_class_schedule.start_time, 
+users_class_schedule.end_time, users_student.full_name AS "student_name", users_student.profile_image FROM users_teacher
+JOIN users_teacher_schedule ON users_teacher.id = users_teacher_schedule.teacher_Id_id
+JOIN users_class_schedule ON users_teacher_schedule.class_schedule_Id_id = users_class_schedule.class_Id_id
+JOIN users_classes ON users_class_schedule.class_Id_id = users_classes.id
+JOIN users_subject ON users_class_schedule.subject_Id_id = users_subject.id
+JOIN users_student_schedule ON users_class_schedule.id = users_student_schedule.class_schedule_Id_id
+JOIN users_student ON users_student_schedule.student_Id_id = users_student.id where users_classes.class_name = "C1" and users_teacher.user_id_id = "7";
+
+
+/* Student Profile  */
+Select users_student.id, users_student.full_name, users_user.email, users_student.phone_number, users_student.user_id_id AS "user_id", users_student.gender, users_student.birthdate, users_student.profile_image FROM users_user
+JOIN users_student ON users_user.id = users_student.user_id_id where users_student.user_id_id = 3;
+
+
+/* Teacher Profile  */
+Select users_teacher.id, users_teacher.full_name, users_user.email, users_teacher.phone_number, users_teacher.user_id_id AS "user_id", users_teacher.gender, users_teacher.birthdate, users_teacher.profile_image FROM users_user
+JOIN users_teacher ON users_user.id = users_teacher.user_id_id;
+
+
+
+
+
+Select * FROM users_teacher_schedule;
+
+
+
+/* Students List based on subject taught by the teacher  */
+Select users_teacher.id, users_teacher.user_id_id AS "teacher_user_id" , users_subject.subject_name, users_classes.class_name,  users_student.id AS "student_id" , users_student.full_name AS "student_name", users_student.profile_image FROM users_teacher
+JOIN users_teacher_schedule ON users_teacher.id = users_teacher_schedule.teacher_Id_id
+JOIN users_class_schedule ON users_teacher_schedule.class_schedule_Id_id = users_class_schedule.class_Id_id
+JOIN users_classes ON users_class_schedule.class_Id_id = users_classes.id
+JOIN users_subject ON users_class_schedule.subject_Id_id = users_subject.id
+JOIN users_student_schedule ON users_class_schedule.id = users_student_schedule.class_schedule_Id_id
+JOIN users_student ON users_student_schedule.student_Id_id = users_student.id where users_classes.class_name = "C2" and users_teacher.user_id_id = "7" and users_subject.subject_name = "Advanced Databases";
+
+
+/* Unique classes for selected teacher  */
+Select DISTINCT users_classes.class_name FROM users_teacher
+JOIN users_teacher_schedule ON users_teacher.id = users_teacher_schedule.teacher_Id_id
+JOIN users_class_schedule ON users_teacher_schedule.class_schedule_Id_id = users_class_schedule.id
+JOIN users_classes ON users_class_schedule.class_Id_id = users_classes.id
+JOIN users_subject ON users_class_schedule.subject_Id_id = users_subject.id
+WHERE users_teacher.user_id_id = 7 and users_subject.subject_name = "Advanced Databases";
+
+
+Select DISTINCT users_classes.class_name FROM users_student
+JOIN users_student_schedule ON users_student.id = users_student_schedule.student_Id_id
+JOIN users_class_schedule ON users_student_schedule.class_schedule_Id_id = users_class_schedule.id
+JOIN users_classes ON users_class_schedule.class_Id_id = users_classes.id
+JOIN users_subject ON users_class_schedule.subject_Id_id = users_subject.id
+WHERE users_student.user_id_id = 80 and users_subject.subject_name = "Advanced Databases";
+
+select*from users_subject;
+
+select*from users_student_attendance
+JOIN users_student_attendance ON users_student.id = users_student_attendance.student_id_id;
+
+
+
+Select users_teacher.id, users_teacher.user_id_id AS "teacher_user_id" , users_subject.subject_name, users_classes.class_name,  users_student.id AS "student_id" , users_student.full_name AS "student_name",
+users_student_attendance.att_date, users_student_attendance.att_status FROM users_teacher
+JOIN users_teacher_schedule ON users_teacher.id = users_teacher_schedule.teacher_Id_id
+JOIN users_class_schedule ON users_teacher_schedule.class_schedule_Id_id = users_class_schedule.class_Id_id
+JOIN users_classes ON users_class_schedule.class_Id_id = users_classes.id
+JOIN users_subject ON users_class_schedule.subject_Id_id = users_subject.id
+JOIN users_student_schedule ON users_class_schedule.id = users_student_schedule.class_schedule_Id_id
+JOIN users_student ON users_student_schedule.student_Id_id = users_student.id
+JOIN users_student_attendance ON users_student.id = users_student_attendance.student_id_id where users_classes.class_name = "C2" AND users_subject.subject_name = "Advanced Databases";
+
+
+/* View Attendance Record by date, class and subject for student*/
+select users_student.id AS "student_id", users_student.full_name AS "student_name", users_subject.id AS "subject_id", users_subject.subject_name, users_student_attendance.att_date, users_student_attendance.att_status
+FROM users_student
+JOIN users_student_attendance ON users_student.id = users_student_attendance.student_id_id
+JOIN users_subject ON users_student_attendance.subject_id_id = users_subject.id where users_subject.subject_name = "Advanced Databases" AND users_student.id = 26;
+
+
+
+/* View student Attendance Record by date, class and subject for teacher*/
+Select users_teacher.user_id_id AS "teacher_user_id" ,  users_student.id AS "student_id" , users_student.full_name AS "student_name", users_subject.subject_name, users_classes.class_name,
+users_student_attendance.att_date, users_student_attendance.att_status FROM users_teacher
+JOIN users_teacher_schedule ON users_teacher.id = users_teacher_schedule.teacher_Id_id
+JOIN users_class_schedule ON users_teacher_schedule.class_schedule_Id_id = users_class_schedule.class_Id_id
+JOIN users_classes ON users_class_schedule.class_Id_id = users_classes.id
+JOIN users_subject ON users_class_schedule.subject_Id_id = users_subject.id
+JOIN users_student_schedule ON users_class_schedule.id = users_student_schedule.class_schedule_Id_id
+JOIN users_student ON users_student_schedule.student_Id_id = users_student.id
+JOIN users_student_attendance ON users_student.id = users_student_attendance.student_id_id where users_classes.class_name = "C2" AND users_subject.subject_name = "Advanced Databases";
+
+
+
+
+SELECT users_student_attendance.student_id_id AS "student_id", SUM(users_student_attendance.att_status = 'Present') AS present, SUM(users_student_attendance.att_status = 'Absent') AS absent
+FROM users_student_attendance where users_student_attendance.student_id_id = 26;
+
+
+
+SELECT users_student.id, users_student_attendance.student_id_id AS "student_id", users_student.user_id_id AS "user_id", users_subject.subject_name, SUM(users_student_attendance.att_status = "Present") AS "present", SUM(users_student_attendance.att_status = "Absent") AS "absent"
+FROM users_student_attendance 
+JOIN users_student ON users_student_attendance.student_id_id = users_student.id
+JOIN users_subject ON users_subject.id = users_student_attendance.subject_id_id
+where users_student_attendance.student_id_id = 26 and users_subject.subject_name = "Advanced Databases";
+
+
+
+SELECT*FROM users_student_attendance;
+
+
+
+SELECT users_class_schedule.id FROM users_class_schedule WHERE users_class_schedule.class_Id_id = 2
+AND users_class_schedule.subject_id_id = 1;
+
+
+
+select users_classes.id from users_classes WHERE users_classes.class_name = "C2";

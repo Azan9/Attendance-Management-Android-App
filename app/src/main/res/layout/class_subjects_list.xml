@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/s_id"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:visibility="gone"/>-->
+
+<TextView android:id="@+id/sub_selected_text_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:ellipsize="end"
+    android:maxLines="1"
+    android:fontFamily="@font/balsamiq_sans"
+    android:textColor="@color/black"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
