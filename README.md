@@ -81,7 +81,7 @@ To start the django server, run the following command:
 
 To access the web app, You need to create a superuser first to be able to use the web app. Follow [this](https://docs.djangoproject.com/en/1.8/intro/tutorial02/) guide to learn how to create a superuser.
 
-After creating the superuser, type the following the url of your browser to access the web app.
+After creating the superuser, type the following in the url of your browser to access the web app.
 
 _127.0.0.1:8000_ to use the web app or _127.0.0.1:8000/admin_ if you want to use the default Django admin interface
 
