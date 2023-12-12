@@ -23,8 +23,6 @@ schedule from the events calendar.
 also view the attendance record of the student in their class.
 * Teachers can view their timetable and schedule from the events calendar. 
 * Teachers can view, update their profile, and change their password.
-* Students and Teacher will be receive notification before their classes are about 
-  to start.
 
 
 # Web Application features
